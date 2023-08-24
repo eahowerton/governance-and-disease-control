@@ -43,7 +43,7 @@ for(i in 1:(length(plot_order))){
     ggplot(aes(x = time, y = value, color = patch_control, linetype = patch_control)) +
     geom_line() +
     facet_grid(rows = vars(variable),
-               labeller = labeller(variable = cholera_control_labs),
+               labeller = labeller(variable = chol_control_labs),
                switch = "y",
                scales = "free") +
     labs(color = "Patch:", 
@@ -96,6 +96,6 @@ cholera_vary_mvmt_plots <- plot_grid(plot_grid(plotlist = p, ncol = 4),
 cholera_vary_mvmt_plots
 
 ggsave("figures/figureA4-Cholera_vary_movement.pdf",
-       ebola_vary_mvmt_plots,
+       cholera_vary_mvmt_plots,
        width = 8, height = 3, scale = 2)
 
