@@ -18,7 +18,7 @@ source("code/results/vary_movement_params_ebola.R")
 # load plotting utilities
 source("code/results/plotting_utils.R")
 
-#### FIGURE A3: Cholera controls with changing movement params -----------------
+#### FIGURE 8: Ebola controls with changing movement params -----------------
 chol_titles <- c("(b) increase movement from patch 1 to patch 2", 
                  "(c) increase movement from patch 2 to  patch 1", 
                  "(d) increase movement in both directions",
@@ -95,7 +95,7 @@ ebola_vary_mvmt_plots <- plot_grid(plot_grid(plotlist = p, ncol = 4),
                                    rel_heights = c(0.95,0.05))
 ebola_vary_mvmt_plots
 
-ggsave("figures/figureA5-Ebola_vary_movement.pdf",
+ggsave("figures/figure8-Ebola_vary_movement.eps",
        ebola_vary_mvmt_plots,
        width = 8, height = 3, scale = 2)
 
