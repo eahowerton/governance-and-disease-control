@@ -16,6 +16,8 @@ registerDoParallel(detectCores() - 2) # update this if you want to use more core
 # load optimal control files
 source("code/optimal_control_functions.R")
 
+ebol_mod_details <- setup_model("ebola")
+
 #### FUNCTIONS -----------------------------------------------------------------
 sens_analysis_setup <- function(change_params, 
                                 multiplier, 
