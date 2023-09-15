@@ -57,7 +57,7 @@ figA1 <- figA1 +
                         labels = c("Patch 1", "Patch 2"), 
                         name = "")
 
-ggsave("figures/figureA1-appendix_cholera_no control.pdf",
+ggsave("figures/figureA1-appendix_cholera_no control.eps",
        plot = figA1,
        width = 6, height = 2, scale = 2)
 

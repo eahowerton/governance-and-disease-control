@@ -26,6 +26,11 @@ ebol_all_states_labs <- c("Susceptible",
                           "Dead",
                           "Recovered")
 names(ebol_all_states_labs) <- c("S", "E", "I", "H", "D", "R")
+ltys = c("solid", "solid")
+names(ltys) = c("1-none", "2-none")
+cols = patch_colors
+names(cols) = c("1-none", "2-none")
+
 
 figA2 <- states %>%
   filter(
@@ -59,6 +64,7 @@ figA2 <- figA2 +
 
 
 
-ggsave("figures/figureA2-appendix_ebola_no control.pdf",
+ggsave("figures/figureA2-appendix_ebola_no control.eps",
        plot = figA2,
        width = 6, height = 1.5, scale = 2.3)
+

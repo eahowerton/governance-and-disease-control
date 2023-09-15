@@ -34,7 +34,7 @@ fig <- create_multipanel_ts_plot(
   control_labs = ebola_control_labs, 
   patch_ltys = ebola_ltys
 )
-ggsave("figures/figure5-Ebola_trajectories_control.pdf",
+ggsave("figures/figure5-Ebola_trajectories_control.eps",
        plot = fig,
        width = 6, height = 3, scale = 2)
 

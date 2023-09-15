@@ -88,7 +88,7 @@ Cholera_vary_cost_plots <- plot_grid(plot_grid(plotlist = p, ncol = 3),
                                      rel_heights = c(0.95,0.05))
 Cholera_vary_cost_plots
 
-ggsave("figures/figure7-Cholera_vary_cost.pdf",
+ggsave("figures/figure7-Cholera_vary_cost.eps",
        Cholera_vary_cost_plots,
        width = 6, height = 3, scale = 2)
 

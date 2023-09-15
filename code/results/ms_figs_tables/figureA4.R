@@ -18,6 +18,8 @@ source("code/results/vary_movement_params_cholera.R")
 # load plotting utilities
 source("code/results/plotting_utils.R")
 
+
+
 #### FIGURE A3: Cholera controls with changing movement params -----------------
 chol_titles <- c("(b) increase movement from patch 1 to patch 2", 
                  "(c) increase movement from patch 2 to  patch 1", 
@@ -95,7 +97,7 @@ cholera_vary_mvmt_plots <- plot_grid(plot_grid(plotlist = p, ncol = 4),
                                    rel_heights = c(0.95,0.05))
 cholera_vary_mvmt_plots
 
-ggsave("figures/figureA4-Cholera_vary_movement.pdf",
+ggsave("figures/figureA4-Cholera_vary_movement.eps",
        cholera_vary_mvmt_plots,
        width = 8, height = 3, scale = 2)
 

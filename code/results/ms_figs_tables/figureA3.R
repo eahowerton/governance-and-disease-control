@@ -18,6 +18,8 @@ source("code/results/vary_cost_params_ebola.R")
 # load plotting utilities
 source("code/results/plotting_utils.R")
 
+
+
 #### FIGURE A3: Ebola controls with changing costs -----------------------------
 ebol_titles <- c("(a) increase cost of vaccination in Patch 1", 
                  #"(b) increase cost of vaccination in patch 2",
@@ -89,6 +91,6 @@ Ebola_vary_cost_plots <- plot_grid(plot_grid(plotlist = p, ncol = 3),
                                    rel_heights = c(0.95,0.05))
 Ebola_vary_cost_plots
 
-ggsave("figures/figureA3-Ebola_vary_cost.pdf",
+ggsave("figures/figureA3-Ebola_vary_cost.eps",
        Ebola_vary_cost_plots,
        width = 6, height = 3, scale = 2)

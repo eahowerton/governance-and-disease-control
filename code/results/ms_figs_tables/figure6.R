@@ -70,7 +70,7 @@ fig <- j_vals %>%
     panel.spacing = unit(0, "cm")
   )
 
-ggsave("figures/figure6-Ebola_relative_costs.pdf",
+ggsave("figures/figure6-Ebola_relative_costs.eps",
        plot = fig,
        width = 6, height = 3, scale = 2)
 

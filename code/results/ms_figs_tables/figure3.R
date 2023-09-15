@@ -35,7 +35,7 @@ fig <- create_multipanel_ts_plot(
   patch_ltys = ebola_ltys
 )
 
-ggsave("figures/figure3-Cholera_trajectories_control.pdf",
+ggsave("figures/figure3-Cholera_trajectories_control.eps",
        plot = fig,
        width = 6, height = 3, scale = 2)
 
